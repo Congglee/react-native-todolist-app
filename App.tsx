@@ -1,16 +1,18 @@
-import {View, Text, StatusBar} from 'react-native';
 import React from 'react';
+import {SafeAreaView} from 'react-native';
 import HomeScreen from './src/homes/HomeScreen';
 
 const App = () => {
   return (
     <>
-      <StatusBar
+      {/* <StatusBar
         translucent
         barStyle={'light-content'}
         backgroundColor="transparent"
-      />
-      <HomeScreen />
+      /> */}
+      <SafeAreaView style={{flex: 1}}>
+        <HomeScreen />
+      </SafeAreaView>
     </>
   );
 };
